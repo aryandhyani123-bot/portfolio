@@ -4,19 +4,12 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink, Folder, Target } from "lucide-react";
 
 const projects = [
+
     {
-        title: "E-Commerce Microservices",
-        description: "A scalable e-commerce backend built with Spring Boot microservices, Kafka for event-driven architecture, and Docker for containerization.",
-        tags: ["Java", "Spring Boot", "Kafka", "Docker", "PostgreSQL"],
-        github: "#",
-        demo: "#",
-    },
-    {
-        title: "Task Management API",
+        title: "Student Management System",
         description: "RESTful API for task tracking with secure authentication using JWT and Spring Security. Features role-based access control.",
         tags: ["Java", "Spring Security", "Hibernate", "MySQL", "JWT"],
-        github: "#",
-        demo: "#",
+        github: "https://github.com/aryandhyani123-bot/StudentManagementSystem",
     },
     {
         title: "Wagon R Showcase",
@@ -58,12 +51,16 @@ export function Projects() {
                             <div className="flex justify-between items-start mb-4">
                                 <Folder className="w-10 h-10 text-cyan-500" />
                                 <div className="flex gap-4">
-                                    <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                                        <Github className="w-5 h-5" />
-                                    </a>
-                                    <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
-                                        <ExternalLink className="w-5 h-5" />
-                                    </a>
+                                    {project.github && (
+                                        <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                                            <Github className="w-5 h-5" />
+                                        </a>
+                                    )}
+                                    {project.demo && (
+                                        <a href={project.demo} target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                                            <ExternalLink className="w-5 h-5" />
+                                        </a>
+                                    )}
                                 </div>
                             </div>
 

@@ -91,14 +91,17 @@ export function Navbar() {
                             </a>
                         ))}
                         <div className="flex items-center gap-6 mt-2">
-                            <a href="#" className="text-slate-400 hover:text-white">
+                            <a href="https://github.com/aryandhyani123-bot" className="text-slate-400 hover:text-white" target="_blank">
                                 <Github className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-slate-400 hover:text-white">
+                            <a href="https://www.linkedin.com/in/aryan-dhyani/" className="text-slate-400 hover:text-white" target="_blank">
                                 <Linkedin className="w-5 h-5" />
                             </a>
-                            <a href="#" className="text-slate-400 hover:text-white">
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aryan.dhyani2004@gmail.com" className="text-slate-400 hover:text-white" target="_blank">
                                 <Mail className="w-5 h-5" />
+                            </a>
+                            <a href="/resume.pdf" className="text-slate-400 hover:text-white" target="_blank" title="Resume">
+                                <FileText className="w-5 h-5" />
                             </a>
                         </div>
                     </motion.div>
